@@ -1,0 +1,19 @@
+{
+  "name": "woi-woi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --forceExit --coverage --detectOpenHandles"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "bail": true
+  }
+}
