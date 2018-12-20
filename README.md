@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://assets.futuready.com/v2/asset/images/logo-futuready.png" height="100" /><br/>
+  <img src="https://assets.futuready.com/v2/asset/images/logo-futuready.png" height="50" /><br/>
   <span><b>DevHub</b>: <span>TweetDeck for GitHub [BETA]</span><br/>
   <span><a href="https://play.google.com/store/apps/details?id=com.devhubapp" target="_blank">Android</a>, <a href="https://itunes.apple.com/br/app/devhub-for-github/id1191864199?l=en&mt=8" target="_blank">iOS</a> & <a href="https://devhubapp.com/" target="_blank">Web</a> with <b>95%+ code sharing</b> between them</span><br/>
   <a href="https://devhubapp.com/" target="_blank">devhubapp.com</a>
