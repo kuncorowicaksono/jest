@@ -46,7 +46,9 @@ Whenever possible, please make a pull request with the implementation instead of
 
 That's it. It will copy the basicModel to your model. 
 
-## getRecordCount
+<br/>
+
+## `getRecordCount`
 
 ***Goal :***
   * return number of rows
