@@ -63,7 +63,7 @@ That's it. It will copy the basicModel to your model.
 - `$tbl_name++ `: name of table 
 - `$condition `: array('column_name1'=>$column_val1,'column_name2'=>$column_val2);
 
-
+<br/>
 ## `getRecords`
 
 ***Goal :***
@@ -90,7 +90,7 @@ That's it. It will copy the basicModel to your model.
   $this->BasicModels->getRecords('tbl_name',$condition_array,$select,...);	
 ```
 
-
+<br/>
 ## `getSoftDeleteRecords`
 
 ***Goal :***
@@ -117,7 +117,7 @@ That's it. It will copy the basicModel to your model.
   $this->BasicModels->getRecords('tbl_name',$condition_array,$select,...);	
 ```
 
-
+<br/>
 ## `insertRecord`
 
 ***Goal :***
@@ -134,7 +134,7 @@ That's it. It will copy the basicModel to your model.
 - `$data_array++ `: array('column_name1'=>$column_val1,'column_name2'=>$column_val2);
 - `$id `: primary column value. only use insert_id if ID is autoincrement;
 
-
+<br/>
 ## `updateRecord`
 
 ***Goal :***
@@ -152,7 +152,7 @@ That's it. It will copy the basicModel to your model.
 - `$pri_col++ `: primary key or column name depending on which update query need to fire;
 - `$id `: primary column value. only use insert_id if ID is autoincrement;
 
-
+<br/>
 <br/>
 
 ## Author
