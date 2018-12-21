@@ -27,9 +27,6 @@ BasicModel helps you (developer) to create a code more fast and efficient. By us
 
 - [ ] **Upload File**: Upload file and record file description to database with return success;
 - [ ] **Create Image Thumbnail**: Create thumb of uploaded image.;
-- [ ] **Trending**: New column type to show Trending repositories ([#48](https://github.com/devhubapp/devhub/issues/48));
-- [ ] **Keyboard shortcuts**: Full support for keyboard shortcuts and other accessibility improvements;
-- [ ] **Drag & Drop**: Allow moving columns using drag&drop ([#42](https://github.com/devhubapp/devhub/issues/42))
 
 > Which one do you want first? Any other recommendations? Search for [existing feature requests](https://github.com/devhubapp/devhub/issues?q=is%3Aissue+is%3Aopen+label%3A%22feature+request%22+sort%3Areactions-%2B1-desc) and add a 👍 reaction on them, or create a new one.
 
