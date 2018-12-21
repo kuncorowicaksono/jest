@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://assets.futuready.com/v2/asset/images/logo-futuready.png" height="50" /><br/>
+  <img src="https://assets.futuready.com/v2/asset/images/logo-futuready.png" height="40" /><br/>
   <span><b>BasicModel</b>: <span>Universal Model for Futuready Codeigniter [BETA]</span><br/>
   develop by and for <a href="https://futuready.com/" target="_blank">futuready.com</a>
 </p>
