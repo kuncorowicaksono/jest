@@ -39,7 +39,7 @@ Whenever possible, please make a pull request with the implementation instead of
 
 > If the feature is big, please open an issue first for discussion.
 
-### Running it locally
+## Running it locally
 
 - `cd application/models`
 - `git clone git@github.com:devhubapp/devhub.git`
@@ -56,10 +56,10 @@ That's it. It will copy the basicModel to your model.
   $this->BasicModels->getRecordCount('tbl_name',$condition_array);
 ```
 ***Parameters :***
-> -- => indicates parameter is must
+> ++ indicates parameter is must
 
-	1) $tbl_name--   = name of table 
-	2) $condition	= array('column_name1'=>$column_val1,'column_name2'=>$column_val2);
+- $tbl_name++   = name of table 
+- $condition	= array('column_name1'=>$column_val1,'column_name2'=>$column_val2);
 
 > Note: See License below. For example, you are allowed to use this locally, but not allowed to distribute the changed app to other people or remove its paid features, if any.
 
