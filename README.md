@@ -28,59 +28,7 @@ BasicModel helps you (developer) to create a code more fast and efficient. By us
 - [ ] **Upload File**: Upload file and record file description to database with return success;
 - [ ] **Create Image Thumbnail**: Create thumb of uploaded image.;
 
-> Which one do you want first? Any other recommendations? Search for [existing feature requests](https://github.com/devhubapp/devhub/issues?q=is%3Aissue+is%3Aopen+label%3A%22feature+request%22+sort%3Areactions-%2B1-desc) and add a 👍 reaction on them, or create a new one.
-
-### Paid features:
-
-#### Why is this app "just" 99% free and not 100%?
-
-> "If you find something you think is cool then give that person some money for it so they can make more things you think are cool" 💙
-
-DevHub plans to be a sustainable project. It's not made by a huge company like Facebook. It was created by a single developer that could be making $200k on Facebook, but instead makes $0 working on this full time. DevHub does not plan to work with donations and, instead, plan to create real value for its users and have a few paid features. If you want the project to live and be actively maintained, understand that it will need a revenue and consider subscribing to the paid plan once it launches.
-
-- [ ] **Support for private repositories**: See what your team members are working on ([#32](https://github.com/devhubapp/devhub/issues/32));
-- [ ] **Push notifications**: Enable push notifications for your filtered columns on mobile and/or desktop ([#51](https://github.com/devhubapp/devhub/issues/51));
-- [ ] **GitHub Enterprise**: Support for self hosted GitHubs on local networks; contact us via e-mail: [enterprise@devhubapp.com](mailto:enterprise@devhubapp.com) so we can work on this together.
-
-> Any suggestion for other paid features? Thoughts about the topic?  [Open an issue](https://github.com/devhubapp/devhub/issues/new)!
-
-
-<br/>
-
-
-## Keyboard shortcuts
-
-| Key       | Action                       | Implemented    |
-| --------- | ---------------------------- | -------------- |
-| `Esc`     | Close current open modal     | ✅
-| `a`, `n`  | Add a new column             | ✅
-| `1`...`9` | Go to the `nth` column       | ✅
-| `0`       | Go to the last column        | ✅
-| `j`, `k`  | Move down/up inside a column | [Contribute!](https://github.com/devhubapp/devhub/blob/6157822c7723c85e11bf4bd781656a0204f81ab2/packages/components/src/screens/MainScreen.tsx#L94-L145)
-| `s`       | Toggle save item for later   | [Contribute!](https://github.com/devhubapp/devhub/blob/fbe728fb106712092df1341aba5fdf12807e1f11/packages/components/src/components/cards/partials/NotificationCardHeader.tsx#L125-L133)
-| `Arrow keys` + `Space` | Focus on elements and press things | Contribute!
-| `Alt + Arrow keys` | Move current column | Contribute!
-| `?`       | Show keyboard shortcuts      | Contribute!
-
-
-<br/>
-
-<br/>
-
-## Tech Stack
-
-- [TypeScript](https://github.com/Microsoft/TypeScript)
-- [Create React App](https://github.com/facebook/create-react-app)
-- [Yarn Workspaces](https://yarnpkg.com/lang/en/docs/workspaces/) (Monorepo)
-- [React](https://github.com/facebook/react) with [Hooks](https://reactjs.org/docs/hooks-intro.html)
-- [React Native](https://github.com/facebook/react-native)
-- [React Native Web](https://github.com/necolas/react-native-web)
-- [Redux](https://github.com/reduxjs/react-redux)
-- [Redux Persist](https://github.com/rt2zz/redux-persist)
-- [Redux Saga](https://github.com/redux-saga/redux-saga/)
-- [Reselect](https://github.com/reduxjs/reselect)
-- [GraphQL](https://github.com/facebook/graphql)
-
+> Which one do you want first? Any other recommendations? Search for [existing feature requests](https://github.com/kuncorowicaksono/jest/issues?q=is%3Aissue+is%3Aopen+label%3A%22feature+request%22+sort%3Areactions-%2B1-desc) and add a 👍 reaction on them, or create a new one.
 
 <br/>
 
@@ -93,16 +41,23 @@ Whenever possible, please make a pull request with the implementation instead of
 
 ### Running it locally
 
+- `cd application/models`
 - `git clone git@github.com:devhubapp/devhub.git`
-- `yarn`
-- `yarn dev`
 
-That's it. It will start three workers: `TypeScript compilation watcher`, `Web server` (create-react-app) and the `Mobile server` (react-native packager). The browser will open automatically.
+That's it. It will copy the basicModel to your model. 
 
-To open the mobile projects, use:
+## getRecordCount
 
-- `yarn xcode`
-- `yarn studio`
+Goal : 
+  1) return number of rows
+How to call:
+```
+  $this->BasicModels->getRecordCount('tbl_name',$condition_array);
+```
+Parameters :
+  * => indicates parameter is must
+	1) $tbl_name*   = name of table 
+	2) $condition	= array('column_name1'=>$column_val1,'column_name2'=>$column_val2);
 
 > Note: See License below. For example, you are allowed to use this locally, but not allowed to distribute the changed app to other people or remove its paid features, if any.
 
