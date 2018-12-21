@@ -48,14 +48,14 @@ That's it. It will copy the basicModel to your model.
 
 ## getRecordCount
 
-Goal : 
+***Goal :***
   1) return number of rows
   
-How to call:
+***How to call:***
 ```
   $this->BasicModels->getRecordCount('tbl_name',$condition_array);
 ```
-Parameters :
+***Parameters :***
   * => indicates parameter is must
 	1) $tbl_name*   = name of table 
 	2) $condition	= array('column_name1'=>$column_val1,'column_name2'=>$column_val2);
