@@ -64,6 +64,32 @@ That's it. It will copy the basicModel to your model.
 - `$condition `: array('column_name1'=>$column_val1,'column_name2'=>$column_val2);
 
 
+## `getRecords`
+
+***Goal :***
+  * return array of records from table (without softDelete)
+  
+***How to call:***
+```php
+  $this->BasicModels->getRecords('tbl_name',$condition_array,$select,...);
+```
+***Parameters :***
+> ++ indicates parameter is must
+
+- `$tbl_name++ `: name of table 
+- `$condition `: array('column_name1'=>$column_val1,'column_name2'=>$column_val2);
+- `$select `: ('col1,col2,col3');
+- `$order_by `: array('colname1'=>order,'colname2'=>order); Order='ASC OR DESC';
+- `$start `: start for paging (number);
+- `$limit `: limit for paging (number);
+- `$join `: array('jointable'=>$table_b,'match_a'=>$table_a_reference,'match_b'=>$table_b_reference,'join_type'=>$join_type); join_type = FALSE/'LEFT'/'RIGHT';
+
+> In case where we need joins, you can pass joins in controller also:
+> Ex: $this->db->join('tbl_nameB AS b','tbl_nameA.col=b.col','left');
+>     $this->BasicModels->getRecords('tbl_name',$condition_array,$select,...);	
+
+
+
 <br/>
 
 ## Author
