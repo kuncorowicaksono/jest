@@ -85,8 +85,10 @@ That's it. It will copy the basicModel to your model.
 - `$join `: array('jointable'=>$table_b,'match_a'=>$table_a_reference,'match_b'=>$table_b_reference,'join_type'=>$join_type); join_type = FALSE/'LEFT'/'RIGHT';
 
 > In case where we need joins, you can pass joins in controller also:
-> Ex: $this->db->join('tbl_nameB AS b','tbl_nameA.col=b.col','left');
->     $this->BasicModels->getRecords('tbl_name',$condition_array,$select,...);	
+```php
+  $this->db->join('tbl_nameB AS b','tbl_nameA.col=b.col','left');
+  $this->BasicModels->getRecords('tbl_name',$condition_array,$select,...);	
+```
 
 
 
