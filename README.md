@@ -46,6 +46,24 @@ Whenever possible, please make a pull request with the implementation instead of
 
 That's it. It will copy the basicModel to your model. 
 
+## Database Schema
+
+For purpose of soft delete vs hard delete, you need to create your table looks like this:
+
+```
+┌────┬─────┬───────────┐───────────┐───────────┐
+│ id │ ... │ createdAt │ updatedAt │ deletedAt │
+├────┼─────┼───────────┼───────────┼───────────┤
+│  1 │ ... │           │           │           │
+├────┼─────┼───────────┼───────────┼───────────┤
+│  2 │ ... │           │           │           │
+└────┴─────┴───────────┘───────────┘───────────┘
+
+- `createdAt`   | DateTime | Use to capture time data stored in database
+- `updatedAt`   | DateTime | CURRENT_TIMESTAMP | Use to capture time data updated
+- `deletedAt`   | DateTime | Use to capture time data softdeleted
+```
+
 <br/>
 
 ## `getRecordCount`
