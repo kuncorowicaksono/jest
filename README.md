@@ -1,8 +1,7 @@
 <p align="center">
   <img src="https://assets.futuready.com/v2/asset/images/logo-futuready.png" height="50" /><br/>
-  <span><b>DevHub</b>: <span>TweetDeck for GitHub [BETA]</span><br/>
-  <span><a href="https://play.google.com/store/apps/details?id=com.devhubapp" target="_blank">Android</a>, <a href="https://itunes.apple.com/br/app/devhub-for-github/id1191864199?l=en&mt=8" target="_blank">iOS</a> & <a href="https://devhubapp.com/" target="_blank">Web</a> with <b>95%+ code sharing</b> between them</span><br/>
-  <a href="https://devhubapp.com/" target="_blank">devhubapp.com</a>
+  <span><b>BasicModel</b>: <span>Universal Model for Futuready Codeigniter [BETA]</span><br/>
+  <a href="https://futuready.com/" target="_blank">futuready.com</a>
 </p>
   
 <br/>
@@ -26,9 +25,8 @@ BasicModel helps you (developer) to create a code more fast and efficient. By us
 
 ### Next features:
 
-- [ ] **Desktop apps**: [#2](https://github.com/devhubapp/devhub/issues/2)
-- [ ] **More filters**: Filter items by type (issue, pr, etc.); filter by regex; filter by org/repos;
-- [ ] **Issues/PR management**: New column types to manage all issues and PRs, filter the ones assigned to you, etc.;
+- [ ] **Upload File**: Upload file and record file description to database with return success;
+- [ ] **Create Image Thumbnail**: Create thumb of uploaded image.;
 - [ ] **Trending**: New column type to show Trending repositories ([#48](https://github.com/devhubapp/devhub/issues/48));
 - [ ] **Keyboard shortcuts**: Full support for keyboard shortcuts and other accessibility improvements;
 - [ ] **Drag & Drop**: Allow moving columns using drag&drop ([#42](https://github.com/devhubapp/devhub/issues/42))
