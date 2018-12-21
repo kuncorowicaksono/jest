@@ -157,6 +157,67 @@ That's it. It will copy the basicModel to your model.
 - `$id `: primary column value. only use insert_id if ID is autoincrement;
 
 <br/>
+
+## `softDeleteRecord`
+
+***Goal :***
+  * instead delete record from table, we add deletedAt in database
+  
+***How to call:***
+```php
+  $this->BasicModels->softDeleteRecord('tbl_name','pri_col',$id)
+```
+***Parameters :***
+> ++ indicates parameter is must
+
+- `$tbl_name++ `: name of table;
+- `$pri_col++ `: primary key or column name depending on which update query need to fire;
+- `$id `: primary column or condition column value;
+
+> It will useful while deleting record from single table. *delete join will not work here.
+
+<br/>
+
+## `restoreSoftDeletedRecord`
+
+***Goal :***
+  * restore data which already in softDeletedRecord.
+  
+***How to call:***
+```php
+  $this->BasicModels->restoreSoftDeletedRecord('tbl_name','pri_col',$id)
+```
+***Parameters :***
+> ++ indicates parameter is must
+
+- `$tbl_name++ `: name of table;
+- `$data_array++ `: array('column_name1'=>$column_val1,'column_name2'=>$column_val2);
+- `$pri_col++ `: primary key or column name depending on which update query need to fire;
+- `$id `: primary column or condition column value;
+
+> It will useful while deleting record from single table. *delete join will not work here.
+
+<br/>
+
+## `hardDeleteRecord`
+
+***Goal :***
+  * delete record from table, and store it to log.
+  
+***How to call:***
+```php
+  $this->BasicModels->hardDeleteRecord('tbl_name','pri_col',$id)
+```
+***Parameters :***
+> ++ indicates parameter is must
+
+- `$tbl_name++ `: name of table;
+- `$data_array++ `: array('column_name1'=>$column_val1,'column_name2'=>$column_val2);
+- `$pri_col++ `: primary key or column name depending on which update query need to fire;
+- `$id `: primary column or condition column value;
+
+> It will useful while deleting record from single table. *delete join will not work here.
+
 <br/>
 
 ## Author
