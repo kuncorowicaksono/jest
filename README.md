@@ -58,10 +58,9 @@ That's it. It will copy the basicModel to your model.
 ***Parameters :***
 > ++ indicates parameter is must
 
-- `$tbl_name++` name of table 
-- `$condition` array('column_name1'=>$column_val1,'column_name2'=>$column_val2);
+- `$tbl_name++ `: name of table 
+- `$condition `: array('column_name1'=>$column_val1,'column_name2'=>$column_val2);
 
-> Note: See License below. For example, you are allowed to use this locally, but not allowed to distribute the changed app to other people or remove its paid features, if any.
 
 <br/>
 
