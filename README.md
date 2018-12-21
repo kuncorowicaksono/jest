@@ -64,6 +64,7 @@ That's it. It will copy the basicModel to your model.
 - `$condition `: array('column_name1'=>$column_val1,'column_name2'=>$column_val2);
 
 <br/>
+
 ## `getRecords`
 
 ***Goal :***
@@ -91,6 +92,7 @@ That's it. It will copy the basicModel to your model.
 ```
 
 <br/>
+
 ## `getSoftDeleteRecords`
 
 ***Goal :***
@@ -118,6 +120,7 @@ That's it. It will copy the basicModel to your model.
 ```
 
 <br/>
+
 ## `insertRecord`
 
 ***Goal :***
@@ -135,6 +138,7 @@ That's it. It will copy the basicModel to your model.
 - `$id `: primary column value. only use insert_id if ID is autoincrement;
 
 <br/>
+
 ## `updateRecord`
 
 ***Goal :***
