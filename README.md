@@ -66,6 +66,8 @@ For purpose of soft delete vs hard delete, you need to create your table looks l
 
 <br/>
 
+## How to Call
+
 ## `getRecordCount`
 
 ***Goal :***
