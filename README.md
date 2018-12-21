@@ -52,7 +52,7 @@ That's it. It will copy the basicModel to your model.
   * return number of rows
   
 ***How to call:***
-```php
+```html
   $this->BasicModels->getRecordCount('tbl_name',$condition_array);
 ```
 ***Parameters :***
