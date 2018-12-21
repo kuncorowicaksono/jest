@@ -91,6 +91,67 @@ That's it. It will copy the basicModel to your model.
 ```
 
 
+## `getSoftDeleteRecords`
+
+***Goal :***
+  * return array of softDelete records from table
+  
+***How to call:***
+```php
+  $this->BasicModels->getSoftDeleteRecords('tbl_name',$condition_array,$select,...);
+```
+***Parameters :***
+> ++ indicates parameter is must
+
+- `$tbl_name++ `: name of table 
+- `$condition `: array('column_name1'=>$column_val1,'column_name2'=>$column_val2);
+- `$select `: ('col1,col2,col3');
+- `$order_by `: array('colname1'=>order,'colname2'=>order); Order='ASC OR DESC';
+- `$start `: start for paging (number);
+- `$limit `: limit for paging (number);
+- `$join `: array('jointable'=>$table_b,'match_a'=>$table_a_reference,'match_b'=>$table_b_reference,'join_type'=>$join_type); join_type = FALSE/'LEFT'/'RIGHT';
+
+> Note: in case where we need joins, you can pass joins in controller also:
+```php
+  $this->db->join('tbl_nameB AS b','tbl_nameA.col=b.col','left');
+  $this->BasicModels->getRecords('tbl_name',$condition_array,$select,...);	
+```
+
+
+## `insertRecord`
+
+***Goal :***
+  * insert record, on successful updates return success: true.
+  
+***How to call:***
+```php
+  $this->BasicModels->insertRecord('tbl_name',$data_array,$id);
+```
+***Parameters :***
+> ++ indicates parameter is must
+
+- `$tbl_name++ `: name of table 
+- `$data_array++ `: array('column_name1'=>$column_val1,'column_name2'=>$column_val2);
+- `$id `: primary column value. only use insert_id if ID is autoincrement;
+
+
+## `updateRecord`
+
+***Goal :***
+  * updates record, on successful updates return success: true.
+  
+***How to call:***
+```php
+  $this->BasicModels->updateRecord('tbl_name',$data_array,$pri_col,$id)
+```
+***Parameters :***
+> ++ indicates parameter is must
+
+- `$tbl_name++ `: name of table;
+- `$data_array++ `: array('column_name1'=>$column_val1,'column_name2'=>$column_val2);
+- `$pri_col++ `: primary key or column name depending on which update query need to fire;
+- `$id `: primary column value. only use insert_id if ID is autoincrement;
+
 
 <br/>
 
