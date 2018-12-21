@@ -49,10 +49,10 @@ That's it. It will copy the basicModel to your model.
 ## getRecordCount
 
 ***Goal :***
-  1) return number of rows
+  * return number of rows
   
 ***How to call:***
-```
+```php
   $this->BasicModels->getRecordCount('tbl_name',$condition_array);
 ```
 ***Parameters :***
