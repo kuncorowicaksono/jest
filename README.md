@@ -15,7 +15,9 @@ BasicModel helps you (developer) to create a code more fast and efficient. By us
 </p>
 
 
+<p align="center">
   ![alt text](https://i.ibb.co/286kF5m/Basic-Model.png)
+</p>
 
 ## Features
 
