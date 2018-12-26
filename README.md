@@ -10,7 +10,12 @@
 
 BasicModel helps you (developer) to create a code more fast and efficient. By using BasicModel, you just need to create a controller without create any model again.
 
-![alt text](https://i.ibb.co/286kF5m/Basic-Model.png)
+<p align="center">
+  <img width="460" height="300" src="https://i.ibb.co/286kF5m/Basic-Model.png">
+</p>
+
+
+  ![alt text](https://i.ibb.co/286kF5m/Basic-Model.png)
 
 ## Features
 
