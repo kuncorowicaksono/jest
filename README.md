@@ -6,43 +6,46 @@
   
 <br/>
 
-## Why
+## General options
 
-BasicModel helps you (developer) to create a code more fast and efficient. By using BasicModel, you just need to create a controller without create any model again.
+All API should have api key in header, please ask developer for any api_key.
 
-<p align="center">
-  <img width="600" src="https://i.ibb.co/LxZKS63/Basic-Model.png">
-</p>
+The following syntax applies to all services, except as noted.
 
+```endpoint
+GET/POST: {controller}/{method}/{value:optional}
 
-## Features
+{
+    "primarykey": pk_value,
+    ...
+    "user_id": "yourusername"
+}
+```
+| Parameter | Description |
+| --- | --- |
+| `controller` | Class / filename as a blueprint or a set of instruction / method |
+| `method` | Method name |
+| `value` | Optional; One of the following method use this value: [`getsingle`](###getsingle) |
+| `primarykey`| String of id/primary key; for open the data detail, please get all data first using [`getsingle`](###getsingle) method |
+| `pk_value`| String or integer as value of those primary key |
+| `user_id`| To capture user who doing update and store it to database |
+| `body format`| Only `json` is supported at the moment. This parameter is mandatory for all POST method |
 
-- [x] **getRecordCount**: Return number of rows;
-- [x] **getRecords**: Return array of records from table; *without softDelete;
-- [x] **insertRecord**: Insert record, on successful updates return success: true;
-- [x] **updateRecord**: Updates record, on successful updates return success: true;
+## Available Method
 
-- [x] **softDeleteRecord**: Instead delete record from table, we add deletedAt in database;
-- [x] **getSoftDeletedRecords**: Return array of softDelete records from table;
-- [x] **restoreSoftDeletedRecord**: Restore data which already in softDeletedRecord;
+GET Method:
+- [x] **getsingle**: Return array of one records from table; *without softDelete;
+- [x] **get**: Return array of records from table; *without softDelete;
+- [x] **readsoftdeleted**: Return array of softDelete records from table;
 
+POST Method:
+- [x] **insert**: Insert record, on successful updates return success: true;
+- [x] **update**: Updates record, on successful updates return success: true;
+- [x] **Delete**: Instead delete record from table, we add deletedAt in database; (soft deleted)
+- [x] **updatesoftdeleted**: Restore data which already in softDeletedRecord;
+
+Another / Additional:
 - [x] **hardDeleteRecord**: Delete record from table, and store it to log;
-
-### Next features:
-
-- [ ] **Upload File**: Upload file and record file description to database with return success;
-- [ ] **Create Image Thumbnail**: Create thumb of uploaded image.;
-
-> Which one do you want first? Any other recommendations? Search for [existing feature requests](https://github.com/kuncorowicaksono/jest/issues?q=is%3Aissue+is%3Aopen+label%3A%22feature+request%22+sort%3Areactions-%2B1-desc) and add a 👍 reaction on them, or create a new one.
-
-<br/>
-
-## Contributing
-
-Bug reports, feature requests and other contributions are more than welcome! <br/>
-Whenever possible, please make a pull request with the implementation instead of just requesting it.
-
-> If the feature is big, please open an issue first for discussion.
 
 ## Running it locally
 
@@ -51,9 +54,30 @@ Whenever possible, please make a pull request with the implementation instead of
 
 That's it. It will copy the basicModel to your model. 
 
-## Database Schema
+## Data Schema
 
-For purpose of soft delete vs hard delete, you need to create your table looks like this:
+For purpose of soft delete vs hard delete, our return of array will look like this:
+
+```json
+[
+    {
+        "id": "1",
+        ...
+        "createdAt": null,
+        "updatedAt": null,
+        "deletedAt": null
+    },
+    {
+        "id": "2",
+        ...
+        "createdAt": null,
+        "updatedAt": null,
+        "deletedAt": null
+    }
+]
+```
+
+or in table view looks like this:
 
 ```
 ┌────┬─────┬───────────┬───────────┬───────────┐
